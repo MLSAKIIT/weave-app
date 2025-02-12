@@ -67,9 +67,13 @@ class EmailVerifiedPage extends StatelessWidget {
                     width: screenSize.width * 0.6, 
                     height: screenSize.height * 0.07, 
                     child: ElevatedButton(
-                      onPressed: () {
-                        Navigator.pushNamed(context, '/sent'); // Navigate to the EmailSentPage for now it 
-                      },                                       // will be lated edited to home page
+                    onPressed: null,
+
+                      // onPressed: () {
+                      //   Navigator.pushNamed(context, '/sent'); // will update the route later
+                      // },         
+
+
                       style: ElevatedButton.styleFrom(
                         backgroundColor: const Color(0xFFE76F04), // Orange background color.
                         shape: RoundedRectangleBorder(

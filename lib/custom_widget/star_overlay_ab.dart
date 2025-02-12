@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart'; // Import Flutter's material design package.
+import 'package:flutter/material.dart';
 
 class StarOverlay extends StatelessWidget {
   const StarOverlay({super.key}); // Constructor for the widget.
