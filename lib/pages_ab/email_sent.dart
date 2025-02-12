@@ -19,10 +19,10 @@ class EmailSentPage extends StatelessWidget {
 
           // Positioned widget is used to place the confirmation box at a specific position.
           Positioned(
-            top: screenSize.height * 0.23, 
-            left: screenSize.width * 0.04, 
+            top: screenSize.height * 0.25, 
+            left: screenSize.width * 0.08, 
             child: Container(
-              width: screenSize.width * 0.92, 
+              width: screenSize.width * 0.85, 
               height: screenSize.height * 0.55, 
               padding: EdgeInsets.all(screenSize.width * 0.05), 
               decoration: BoxDecoration(
