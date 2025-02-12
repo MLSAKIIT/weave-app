@@ -7,7 +7,7 @@ class OrangeGlow extends StatelessWidget {
   // Constructor to initialize postion of top and left
   const OrangeGlow({super.key, required this.top, required this.left});
 
-  @override
+  @override 
   Widget build(BuildContext context) {
     return Positioned( // Positions the glow effect on each page
       top: top, 
