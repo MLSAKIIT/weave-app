@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-// import 'package:splash_screen/pages/splashScreen.dart';
-
+import 'package:weave_app/pages/login.dart';
+import 'package:weave_app/pages/signup.dart';
 import 'pages/splashScreen.dart';
 
 void main () {
@@ -14,7 +14,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: SplashScreen(),
+      initialRoute: '/',
+    routes: {
+      '/': (context => SplashScreen),
+      '/login': (context) => login(),
+      '/signup': (context) => signup(),
+    },
     );
   }
 }
