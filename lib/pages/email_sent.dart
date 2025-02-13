@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart'; 
-import '../custom_widget/star_overlay_ab.dart'; 
-import '../custom_widget/orange_glow_ab.dart'; 
+import '../custom_widgets/star_overlay_ab.dart'; 
+import '../custom_widgets/orange_glow_ab.dart'; 
 
 class EmailSentPage extends StatelessWidget {
   const EmailSentPage({super.key}); 
