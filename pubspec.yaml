@@ -66,6 +66,10 @@ flutter:
     - assets/icons/
     - assets/backgrounds/
     - assets/Splash_screen3.png
+    - assets/stars_background.png
+    - assets/Group 142.png
+    - assets/Group 145.png
+    - assets/ReconnectButton.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
