@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:weave_app/pages/login.dart';
 import 'package:weave_app/pages/signup.dart';
 import 'pages/splashScreen.dart';
+import 'package:wave_app/pages/reconnect.dart';
 
 void main () {
   runApp( MyApp ());
@@ -19,7 +20,9 @@ class MyApp extends StatelessWidget {
       '/': (context => SplashScreen),
       '/login': (context) => login(),
       '/signup': (context) => signup(),
+      '/reconnect': (context) => ReconnectPage(),
     },
+      home: ReconnectPage(),
     );
   }
 }
