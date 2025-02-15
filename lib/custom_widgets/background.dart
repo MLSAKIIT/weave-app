@@ -33,7 +33,8 @@ class Background extends StatelessWidget {
             )
         ),
         Padding(padding: EdgeInsets.symmetric(
-            horizontal: boxPaddingHorizontal, vertical: boxPaddingVertical
+            horizontal: MediaQuery.of(context).size.width *boxPaddingHorizontal,
+            vertical: MediaQuery.of(context).size.height * boxPaddingVertical
         ),
           child: Container(
             decoration: BoxDecoration(
