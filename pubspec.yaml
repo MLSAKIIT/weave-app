@@ -35,6 +35,7 @@ dependencies:
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
+  google_fonts: ^6.2.1
   cupertino_icons: ^1.0.8
   flutter_svg: ^2.0.17
   riverpod: ^2.6.1
@@ -70,6 +71,7 @@ flutter:
     - assets/Group 142.png
     - assets/Group 145.png
     - assets/ReconnectButton.png
+    - assets/star.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

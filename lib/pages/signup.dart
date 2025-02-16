@@ -40,8 +40,8 @@ class _signupState extends State<signup> {
       body: Stack(
         children: [
           Background(
-            boxPaddingHorizontal: horizontalPadding,
-            boxPaddingVertical: verticalPadding,
+            boxPaddingHorizontal: 0.1,
+            boxPaddingVertical: 0.15,
           ),
           Center(
             child: Padding(

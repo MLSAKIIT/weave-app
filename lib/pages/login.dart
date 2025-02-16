@@ -25,7 +25,7 @@ class _loginState extends State<login> {
       backgroundColor: Colors.black,
       body: Stack(
         children: [
-          Background(boxPaddingHorizontal: 32, boxPaddingVertical: 192),
+          Background(boxPaddingHorizontal: 0.1, boxPaddingVertical: 0.2),
           Center(
             child: Padding(
               padding: EdgeInsets.symmetric(
