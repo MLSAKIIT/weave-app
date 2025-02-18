@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:weave_app/pages/reset_password.dart';
 
 void main() {
   runApp(const MyApp());
