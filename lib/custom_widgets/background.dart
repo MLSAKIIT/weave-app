@@ -43,7 +43,7 @@ class Background extends StatelessWidget {
         ),
         Positioned.fill(
             child: Image.asset(
-          'assets/star.png',
+          'assets/backgrounds/star.png',
           fit: BoxFit.cover,
         )),
         Padding(
