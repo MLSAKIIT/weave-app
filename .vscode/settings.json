@@ -1,3 +1,5 @@
 {
-  "java.configuration.updateBuildConfiguration": "interactive"
+  "java.configuration.updateBuildConfiguration": "interactive",
+  "cmake.sourceDirectory": "/home/DotBox/Programming/flutter/weave-app/linux",
+  "java.compile.nullAnalysis.mode": "automatic"
 }
