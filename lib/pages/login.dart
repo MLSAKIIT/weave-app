@@ -14,11 +14,11 @@ class login extends StatefulWidget {
 class _loginState extends State<login> {
   @override
   Widget build(BuildContext context) {
-      final screenWidth  = MediaQuery.of(context).size.width;
+    final screenWidth = MediaQuery.of(context).size.width;
     final screenHeight = MediaQuery.of(context).size.height;
-  
+
     final horizontalPadding = screenWidth * 0.1;
-    final verticalPadding   = screenHeight * 0.25;
+    final verticalPadding = screenHeight * 0.25;
 
     return Scaffold(
       resizeToAvoidBottomInset: false,
@@ -29,7 +29,7 @@ class _loginState extends State<login> {
           Center(
             child: Padding(
               padding: EdgeInsets.symmetric(
-                horizontal: horizontalPadding, 
+                horizontal: horizontalPadding,
                 vertical: verticalPadding,
               ),
               child: Column(
@@ -43,7 +43,7 @@ class _loginState extends State<login> {
                       fontWeight: FontWeight.bold,
                     ),
                   ),
-                  SizedBox(height: screenHeight * 0.07), 
+                  SizedBox(height: screenHeight * 0.07),
                   CustomTextField(
                     hintText: 'Email',
                     icon: 'assets/icons/mail.svg',
@@ -77,7 +77,8 @@ class _loginState extends State<login> {
                         onTap: () {
                           Navigator.pushReplacement(
                             context,
-                            MaterialPageRoute(builder: (context) => const signup()),
+                            MaterialPageRoute(
+                                builder: (context) => const signup()),
                           );
                         },
                         child: const Text(

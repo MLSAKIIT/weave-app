@@ -5,9 +5,10 @@ class StarOverlay extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Positioned.fill( // will fill the while screen with stars
+    return Positioned.fill(
+      // will fill the while screen with stars
       child: Image.asset(
-        "assets/star.png", // the name of my assets folder is ase
+        "assets/backgrounds/star.png", // the name of my assets folder is ase
         fit: BoxFit.cover, // no distortion will be there
         opacity: const AlwaysStoppedAnimation(1), // 1 means full opacity.
       ),

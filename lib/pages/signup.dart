@@ -14,7 +14,8 @@ class signup extends StatefulWidget {
 class _signupState extends State<signup> {
   // Controllers for the password fields
   final TextEditingController _passwordController = TextEditingController();
-  final TextEditingController _confirmPasswordController = TextEditingController();
+  final TextEditingController _confirmPasswordController =
+      TextEditingController();
 
   // Boolean for tracking if the user agreed to the Terms and Conditions
   bool _termsAgreed = false;
@@ -28,11 +29,11 @@ class _signupState extends State<signup> {
 
   @override
   Widget build(BuildContext context) {
-    final screenWidth  = MediaQuery.of(context).size.width;
+    final screenWidth = MediaQuery.of(context).size.width;
     final screenHeight = MediaQuery.of(context).size.height;
 
     final horizontalPadding = screenWidth * 0.1;
-    final verticalPadding   = screenHeight * 0.17;
+    final verticalPadding = screenHeight * 0.17;
 
     return Scaffold(
       resizeToAvoidBottomInset: false,
@@ -52,7 +53,7 @@ class _signupState extends State<signup> {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                   const Text(
+                  const Text(
                     'Sign Up',
                     style: TextStyle(
                       color: Color(0xffe76f04),
@@ -89,7 +90,7 @@ class _signupState extends State<signup> {
                   Center(
                     child: Row(
                       children: [
-                        SizedBox(width: screenWidth*0.055),
+                        SizedBox(width: screenWidth * 0.055),
                         Checkbox(
                           value: _termsAgreed,
                           onChanged: (bool? value) {
@@ -104,14 +105,15 @@ class _signupState extends State<signup> {
                             children: [
                               const Text(
                                 "I agree to the ",
-                                style: TextStyle(color: Colors.white, fontSize: 13),
+                                style: TextStyle(
+                                    color: Colors.white, fontSize: 13),
                               ),
                               GestureDetector(
-                                onTap: () {
-                                },
+                                onTap: () {},
                                 child: const Text(
                                   "terms and conditions",
-                                  style: TextStyle(color: Colors.blue, fontSize: 13),
+                                  style: TextStyle(
+                                      color: Colors.blue, fontSize: 13),
                                 ),
                               ),
                             ],
@@ -124,15 +126,19 @@ class _signupState extends State<signup> {
                   CustomButton(
                     text: 'Sign Up',
                     onPressed: () {
-                      if (_passwordController.text != _confirmPasswordController.text) {
+                      if (_passwordController.text !=
+                          _confirmPasswordController.text) {
                         ScaffoldMessenger.of(context).showSnackBar(
-                          const SnackBar(content: Text("Passwords do not match")),
+                          const SnackBar(
+                              content: Text("Passwords do not match")),
                         );
                         return;
                       }
                       if (!_termsAgreed) {
                         ScaffoldMessenger.of(context).showSnackBar(
-                          const SnackBar(content: Text("You must agree to the Terms and Conditions")),
+                          const SnackBar(
+                              content: Text(
+                                  "You must agree to the Terms and Conditions")),
                         );
                         return;
                       }
@@ -155,7 +161,8 @@ class _signupState extends State<signup> {
                         onTap: () {
                           Navigator.pushReplacement(
                             context,
-                            MaterialPageRoute(builder: (context) => const login()),
+                            MaterialPageRoute(
+                                builder: (context) => const login()),
                           );
                         },
                         child: const Text(

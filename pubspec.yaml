@@ -30,13 +30,16 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  google_fonts: ^6.2.1
+  flutter_svg: ^2.0.17
+  
+
 
 
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
-  google_fonts: ^6.2.1
-  cupertino_icons: ^1.0.8
+  cupertino_icons: ^1.0.6
   flutter_svg: ^2.0.17
   riverpod: ^2.6.1
   web_socket_channel: ^3.0.1
@@ -50,7 +53,7 @@ dev_dependencies:
   # activated in the `analysis_options.yaml` file located at the root of your
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
-  flutter_lints: ^5.0.0
+  flutter_lints: ^3.0.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -63,15 +66,17 @@ flutter:
   # the material Icons class.
   uses-material-design: true
 
+  # To add assets to your application, add an assets section, like this:
   assets:
-    - assets/icons/
-    - assets/backgrounds/
-    - assets/Splash_screen3.png
-    - assets/stars_background.png
-    - assets/Group 142.png
-    - assets/Group 145.png
-    - assets/ReconnectButton.png
-    - assets/star.png
+      - assets/backgrounds/star.png
+      - assets/backgrounds/Group 142.png
+      - assets/icons/eye_visibility_toggle.svg
+      - assets/icons/Group 145.png
+      - assets/icons/mail.svg
+      - assets/icons/person.svg
+      - assets/icons/ReconnectButton.png
+      - assets/icons/Splash_screen3.png
+      - assets/icons/weave_logo.svg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

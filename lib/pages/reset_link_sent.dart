@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:weave_app/utils/background.dart';
+import 'package:weave_app/custom_widgets/background.dart';
+import 'package:weave_app/custom_widgets/constants.dart';
+import 'package:weave_app/custom_widgets/orange_glow_ab.dart';
+import 'package:weave_app/custom_widgets/star_overlay_ab.dart';
 
 class ResetLinkSent extends StatelessWidget {
   const ResetLinkSent({super.key});
@@ -10,7 +13,10 @@ class ResetLinkSent extends StatelessWidget {
 
     return Stack(
       children: [
-        const Background(),
+        const Background(
+            boxPaddingHorizontal: 0.0001, boxPaddingVertical: 0.0001),
+        const OrangeGlow(top: -20, left: -20),
+        const StarOverlay(),
         SingleChildScrollView(
           child: Container(
             margin: EdgeInsets.only(
