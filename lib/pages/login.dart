@@ -2,16 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:weave_app/custom_widgets/customTextField.dart';
 import 'package:weave_app/custom_widgets/customButton.dart';
 import 'package:weave_app/custom_widgets/background.dart';
-import 'package:weave_app/pages/signup.dart';
+import 'package:weave_app/pages/SignUp.dart';
 
-class login extends StatefulWidget {
-  const login({super.key});
+class Login extends StatefulWidget {
+  const Login({super.key});
 
   @override
-  State<login> createState() => _loginState();
+  State<Login> createState() => _LoginState();
 }
 
-class _loginState extends State<login> {
+class _LoginState extends State<Login> {
   @override
   Widget build(BuildContext context) {
     final screenWidth = MediaQuery.of(context).size.width;
@@ -78,7 +78,7 @@ class _loginState extends State<login> {
                           Navigator.pushReplacement(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => const signup()),
+                                builder: (context) => const SignUp()),
                           );
                         },
                         child: const Text(
