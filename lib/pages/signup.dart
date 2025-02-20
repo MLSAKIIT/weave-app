@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:weave_app/custom_widgets/customTextField.dart';
 import 'package:weave_app/custom_widgets/customButton.dart';
-import 'package:weave_app/pages/login.dart';
+import 'package:weave_app/pages/Login.dart';
 import 'package:weave_app/custom_widgets/background.dart';
 
-class signup extends StatefulWidget {
-  const signup({super.key});
+class SignUp extends StatefulWidget {
+  const SignUp({super.key});
 
   @override
-  State<signup> createState() => _signupState();
+  State<SignUp> createState() => _SignUpState();
 }
 
-class _signupState extends State<signup> {
+class _SignUpState extends State<SignUp> {
   // Controllers for the password fields
   final TextEditingController _passwordController = TextEditingController();
   final TextEditingController _confirmPasswordController =
@@ -162,7 +162,7 @@ class _signupState extends State<signup> {
                           Navigator.pushReplacement(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => const login()),
+                                builder: (context) => const Login()),
                           );
                         },
                         child: const Text(
