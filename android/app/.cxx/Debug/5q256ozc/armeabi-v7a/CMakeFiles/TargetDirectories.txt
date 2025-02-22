@@ -1,0 +1,2 @@
+C:/weave-app/android/app/.cxx/Debug/5q256ozc/armeabi-v7a/CMakeFiles/edit_cache.dir
+C:/weave-app/android/app/.cxx/Debug/5q256ozc/armeabi-v7a/CMakeFiles/rebuild_cache.dir
