@@ -76,6 +76,7 @@ flutter:
       - assets/icons/ReconnectButton.png
       - assets/icons/Splash_screen3.png
       - assets/icons/weave_logo.svg
+      - assets/icons/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
@@ -102,3 +103,8 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+
+  fonts:
+    - family: Nova Flat
+      fonts:
+        - asset: assets/fonts/NovaFlat-Regular.ttf
