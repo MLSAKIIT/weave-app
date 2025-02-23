@@ -4,6 +4,7 @@ import 'package:weave_app/custom_widgets/customButton.dart';
 import 'package:weave_app/custom_widgets/background.dart';
 import 'package:weave_app/pages/SignUp.dart';
 import 'package:weave_app/custom_widgets/constants.dart';
+import 'package:weave_app/pages/home.dart';
 
 class Login extends StatefulWidget {
   const Login({super.key});
@@ -81,7 +82,7 @@ class _LoginState extends State<Login> {
                             context,
                             MaterialPageRoute(
                                 builder: (context) => const SignUp()),
-                          );
+                          );    //builder: (context) => const SignUp()),
                         },
                         child: const Text(
                           "Create account",
