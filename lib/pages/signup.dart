@@ -3,6 +3,7 @@ import 'package:weave_app/custom_widgets/customTextField.dart';
 import 'package:weave_app/custom_widgets/customButton.dart';
 import 'package:weave_app/pages/Login.dart';
 import 'package:weave_app/custom_widgets/background.dart';
+import 'package:weave_app/custom_widgets/constants.dart';
 
 class SignUp extends StatefulWidget {
   const SignUp({super.key});
@@ -12,12 +13,9 @@ class SignUp extends StatefulWidget {
 }
 
 class _SignUpState extends State<SignUp> {
-  // Controllers for the password fields
   final TextEditingController _passwordController = TextEditingController();
   final TextEditingController _confirmPasswordController =
       TextEditingController();
-
-  // Boolean for tracking if the user agreed to the Terms and Conditions
   bool _termsAgreed = false;
 
   @override
@@ -56,7 +54,7 @@ class _SignUpState extends State<SignUp> {
                   const Text(
                     'Sign Up',
                     style: TextStyle(
-                      color: Color(0xffe76f04),
+                      color: primaryColor,
                       fontSize: 24,
                       fontWeight: FontWeight.bold,
                     ),
@@ -98,7 +96,7 @@ class _SignUpState extends State<SignUp> {
                               _termsAgreed = value ?? false;
                             });
                           },
-                          activeColor: Color(0xffE76F04),
+                          activeColor: primaryColor,
                         ),
                         Flexible(
                           child: Row(
@@ -143,7 +141,7 @@ class _SignUpState extends State<SignUp> {
                         return;
                       }
                     },
-                    color: const Color(0xffe76f04),
+                    color: primaryColor,
                     widthFactor: 0.5,
                   ),
                   SizedBox(height: screenHeight * 0.05),
