@@ -1,63 +1,39 @@
-// import 'package:flutter/material.dart';
-// import 'package:weave_app/pages/email_verified.dart';
-// import 'package:weave_app/pages/Login.dart';
-// import 'package:weave_app/pages/reset_link_sent.dart';
-// import 'package:weave_app/pages/SignUp.dart';
-// import 'package:weave_app/pages/splashScreen.dart';
-// import 'package:weave_app/pages/email_sent.dart';
-// import 'package:weave_app/pages/reconnect.dart';
-// import 'package:weave_app/pages/Preview.dart';
-//
-// void main() {
-//   runApp(MaterialApp(
-//     debugShowCheckedModeBanner: false,
-//     initialRoute: '/splash',
-//     routes: {
-//       // Initial Routes
-//       '/splash': (context) => SplashScreen(),
-//       '/': (context) => const Login(),
-//
-//       // Auth Routes
-//       '/Login': (context) => const Login(),
-//       '/SignUp': (context) => const SignUp(),
-//       '/email-verified': (context) => const EmailVerifiedPage(),
-//       '/reset-link-sent': (context) => const ResetLinkSent(),
-//       '/email-sent': (context) => const EmailSentPage(),
-//
-//       // Meeting Routes
-//       '/reconnect': (context) => const ReconnectPage(),
-//       '/preview': (context) => const Preview(),
-//
-//       // Add other routes as needed
-//     },
-//     theme: ThemeData(
-//       primaryColor: const Color(0xFFE76F04),
-//       scaffoldBackgroundColor: const Color(0xFF070910),
-//     ),
-//   ));
-// }
-//
-//
-//
-//
-//
-
-
 import 'package:flutter/material.dart';
+import 'package:weave_app/pages/about_us.dart';
+import 'package:weave_app/pages/email_verified.dart';
+import 'package:weave_app/pages/Login.dart';
+import 'package:weave_app/pages/profile_page.dart';
+import 'package:weave_app/pages/reset_link_sent.dart';
+import 'package:weave_app/pages/signup.dart';
+import 'package:weave_app/pages/splashScreen.dart';
+import 'package:weave_app/pages/email_sent.dart';
+import 'package:weave_app/pages/reconnect.dart';
 import 'package:weave_app/pages/Preview.dart';
 
-void main () {
-  runApp(MyApp());
-}
+void main() {
+  runApp(MaterialApp(
+    debugShowCheckedModeBanner: false,
+    initialRoute: '/splash',
+    routes: {
+      '/splash': (context) => SplashScreen(),
+      '/': (context) => const Login(),
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+      '/Login': (context) => const Login(),
+      '/SignUp': (context) => const SignUp(),
+      '/email-verified': (context) => const EmailVerifiedPage(),
+      '/reset-link-sent': (context) => const ResetLinkSent(),
+      '/email-sent': (context) => const EmailSentPage(),
 
-  @override
-  Widget build(BuildContext context) {
-    return const MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Preview(),
-    );
-  }
+      '/reconnect': (context) => const ReconnectPage(),
+      '/preiview': (context) => const Preview(),
+
+      '/profile-page': (context)=>const ProfilePage(),
+      '/about-us': (context) => const AboutUsPage(),
+
+    },
+    theme: ThemeData(
+      primaryColor: const Color(0xFFE76F04),
+      scaffoldBackgroundColor: const Color(0xFF070910),
+    ),
+  ));
 }

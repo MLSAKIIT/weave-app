@@ -3,6 +3,8 @@ import 'package:weave_app/custom_widgets/customTextField.dart';
 import 'package:weave_app/custom_widgets/customButton.dart';
 import 'package:weave_app/custom_widgets/background.dart';
 import 'package:weave_app/pages/SignUp.dart';
+import 'package:weave_app/custom_widgets/constants.dart';
+import 'package:weave_app/pages/home.dart';
 
 class Login extends StatefulWidget {
   const Login({super.key});
@@ -25,7 +27,7 @@ class _LoginState extends State<Login> {
       backgroundColor: Colors.black,
       body: Stack(
         children: [
-          Background(boxPaddingHorizontal: 0.1, boxPaddingVertical: 0.2),
+          const Background(boxPaddingHorizontal: 0.1, boxPaddingVertical: 0.2),
           Center(
             child: Padding(
               padding: EdgeInsets.symmetric(
@@ -35,22 +37,22 @@ class _LoginState extends State<Login> {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text(
+                  const Text(
                     'Log In',
                     style: TextStyle(
-                      color: const Color(0xffe76f04),
+                      color: primaryColor,
                       fontSize: 28,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
                   SizedBox(height: screenHeight * 0.07),
-                  CustomTextField(
+                  const CustomTextField(
                     hintText: 'Email',
                     icon: 'assets/icons/mail.svg',
                     isEmail: true,
                   ),
                   SizedBox(height: screenHeight * 0.02),
-                  CustomTextField(
+                  const CustomTextField(
                     hintText: 'Password',
                     icon: 'assets/icons/eye_visibility_toggle.svg',
                     isPassword: true,
@@ -58,8 +60,9 @@ class _LoginState extends State<Login> {
                   SizedBox(height: screenHeight * 0.04),
                   CustomButton(
                     text: 'Log In',
-                    onPressed: () {},
-                    color: const Color(0xffe76f04),
+                    onPressed: () {
+                    },
+                    color: primaryColor,
                     widthFactor: 0.5,
                   ),
                   SizedBox(height: screenHeight * 0.05),
@@ -79,7 +82,7 @@ class _LoginState extends State<Login> {
                             context,
                             MaterialPageRoute(
                                 builder: (context) => const SignUp()),
-                          );
+                          );    //builder: (context) => const SignUp()),
                         },
                         child: const Text(
                           "Create account",
