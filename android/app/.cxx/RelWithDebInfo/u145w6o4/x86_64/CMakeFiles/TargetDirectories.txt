@@ -1,2 +1,0 @@
-C:/weave-app/android/app/.cxx/RelWithDebInfo/u145w6o4/x86_64/CMakeFiles/edit_cache.dir
-C:/weave-app/android/app/.cxx/RelWithDebInfo/u145w6o4/x86_64/CMakeFiles/rebuild_cache.dir
