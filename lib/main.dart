@@ -8,6 +8,7 @@ import 'package:weave_app/pages/signup.dart';
 import 'package:weave_app/pages/splashScreen.dart';
 import 'package:weave_app/pages/email_sent.dart';
 import 'package:weave_app/pages/reconnect.dart';
+import 'package:weave_app/pages/Preview.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -24,6 +25,7 @@ void main() {
       '/email-sent': (context) => const EmailSentPage(),
 
       '/reconnect': (context) => const ReconnectPage(),
+      '/preiview': (context) => const Preview(),
 
       '/profile-page': (context)=>const ProfilePage(),
       '/about-us': (context) => const AboutUsPage(),
