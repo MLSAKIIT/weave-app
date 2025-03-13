@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:weave_app/custom_widgets/customTextField.dart';
 import 'package:weave_app/custom_widgets/customButton.dart';
-import 'package:weave_app/pages/Login.dart';
+import 'package:weave_app/pages/login.dart';
 import 'package:weave_app/custom_widgets/background.dart';
 import 'package:weave_app/custom_widgets/constants.dart';
 

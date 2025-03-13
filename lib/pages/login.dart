@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:weave_app/custom_widgets/customTextField.dart';
 import 'package:weave_app/custom_widgets/customButton.dart';
 import 'package:weave_app/custom_widgets/background.dart';
-import 'package:weave_app/pages/SignUp.dart';
+import 'package:weave_app/pages/signup.dart';
 import 'package:weave_app/custom_widgets/constants.dart';
 import 'package:weave_app/pages/home.dart';
 
@@ -60,8 +60,7 @@ class _LoginState extends State<Login> {
                   SizedBox(height: screenHeight * 0.04),
                   CustomButton(
                     text: 'Log In',
-                    onPressed: () {
-                    },
+                    onPressed: () {},
                     color: primaryColor,
                     widthFactor: 0.5,
                   ),
@@ -82,7 +81,7 @@ class _LoginState extends State<Login> {
                             context,
                             MaterialPageRoute(
                                 builder: (context) => const SignUp()),
-                          );    //builder: (context) => const SignUp()),
+                          ); //builder: (context) => const SignUp()),
                         },
                         child: const Text(
                           "Create account",
